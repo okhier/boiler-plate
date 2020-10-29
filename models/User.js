@@ -7,14 +7,15 @@ const userSchema = mongoose.Schema({
     email: {
         type: String,
         trim: true,
+        unique: 1
     },
     password: {
         type: String,
         minlength: 5
     },
     lastname: {
-        tpye: String,
-        maxlength: 50
+        type: String,
+        maxlength: 20
     },
     role: {
         type: Number,
